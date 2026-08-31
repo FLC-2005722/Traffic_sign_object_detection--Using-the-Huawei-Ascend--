@@ -1,4 +1,5 @@
 
+
 # Traffic_sign_object_detection (Using the Huawei Ascend)
 
 本项目旨在基于改进版 YOLOv8，结合多种自研模块，实现交通标志目标检测，并支持在华为昇腾（Ascend 310/310B4）开发板上高效部署。
@@ -28,7 +29,7 @@
 ## 主要功能
 
 - **数据增强**：支持多通道低照度模拟、噪声添加、HSV/YCrCb空间增强等，提升模型对复杂环境的鲁棒性。
-- **模型结构改进**：
+- **模型结构改进**：提供 `block_c2f faster kan.py`、`block_DCCAttention.py`、`block_LGAFB.py` 等改进模块。
 - **模型格式转换**：支持PyTorch→ONNX→OM全流程，便于在昇腾NPU部署。
 
 ## 环境依赖
